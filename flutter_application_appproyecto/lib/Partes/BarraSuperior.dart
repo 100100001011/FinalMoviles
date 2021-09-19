@@ -11,11 +11,13 @@ class BarraSuperior extends StatelessWidget {
         //WIDGET PERSONAL
         ImagenNormal("media/img/logo2.png", 70.00, 70.00),
         //WIDGET PERSONAL
-        Textos3('Series', 16),
+        Enlaces(
+          nombre: "Proximamente",
+        ),
         //WIDGET PERSONAL
-        Textos3('Peliculas', 16),
-        //WIDGET PERSONAL
-        Textos3('Novedades', 16),
+        Enlaces(
+          nombre: "Proximamente",
+        ),
       ],
     );
   }

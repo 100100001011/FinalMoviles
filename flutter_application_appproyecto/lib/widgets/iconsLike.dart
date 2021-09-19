@@ -39,3 +39,15 @@ Widget iconFavorite() {
     },
   );
 }
+
+Widget iconInfo() {
+  return LikeButton(
+    likeBuilder: (bool isLiked) {
+      return Icon(
+        Icons.info,
+        size: 30,
+        color: isLiked ? Colors.blueAccent : Colors.white,
+      );
+    },
+  );
+}

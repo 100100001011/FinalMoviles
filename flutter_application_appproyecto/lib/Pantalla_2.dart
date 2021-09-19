@@ -4,8 +4,6 @@ import 'widgets/player.dart';
 import 'widgets/iconsLike.dart';
 
 class Pantalla2 extends StatefulWidget {
-  const Pantalla2({Key? key}) : super(key: key);
-
   @override
   State<Pantalla2> createState() => _Pantalla2();
 }

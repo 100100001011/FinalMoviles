@@ -76,6 +76,8 @@ flutter:
     - media/img/2C.png
     - media/img/3C.jpg
     - media/img/4C.jpg
+    - media/img/prox.jpg
+    - media/img/coming.png
     - media/video/fireforce.mp4
     - media/video/bleach.mp4
     - media/video/bokuno.mp4
@@ -90,6 +92,7 @@ flutter:
     - media/video/beastars.mp4
     - media/video/steing.mp4
     - media/video/rick.mp4
+    - media/video/rezero.mp4
 
 
     

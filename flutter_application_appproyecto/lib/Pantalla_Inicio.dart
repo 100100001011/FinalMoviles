@@ -45,7 +45,7 @@ class _Home extends State<Home> {
             "media/img/3.jpg",
             "media/video/kimetsu.mp4"),
         Lista(
-            "Marvel",
+            "Anime Kohai",
             "media/img/1A.jpg",
             "media/video/dragonball.mp4",
             "media/img/2A.jpg",
@@ -55,7 +55,7 @@ class _Home extends State<Home> {
             "media/img/4A.jpg",
             "media/video/samuraix.mp4"),
         Lista(
-            "Marvel",
+            "Anime Shonen",
             "media/img/1B.jpg",
             "media/video/bokuno.mp4",
             "media/img/2B.jpg",
@@ -65,13 +65,13 @@ class _Home extends State<Home> {
             "media/img/4B.jpg",
             "media/video/beastars.mp4"),
         Lista(
-            "Marvel",
+            "Anime Isekai",
             "media/img/1C.jpg",
             "media/video/FireForce.mp4",
             "media/img/2C.png",
             "media/video/FireForce.mp4",
             "media/img/3C.jpg",
-            "media/video/FireForce.mp4",
+            "media/video/rezero.mp4",
             "media/img/4C.jpg",
             "media/video/kaguya.mp4"),
       ],

@@ -60,7 +60,7 @@ class _IconoCambianteState extends State<IconoCambiante>
     return GestureDetector(
         onTap: animacion,
         child: SimpleAnimatedIcon(
-          size: 30,
+          size: 35,
           color: Colors.white,
           startIcon: Icons.add,
           endIcon: Icons.check,

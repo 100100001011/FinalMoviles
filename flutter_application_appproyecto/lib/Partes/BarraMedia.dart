@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_appproyecto/widgets/Widgets.dart';
 import 'package:flutter_application_appproyecto/widgets/player.dart';
 import 'package:flutter_application_appproyecto/widgets/IconosCambiantes.dart';
+import 'package:flutter_application_appproyecto/widgets/iconsLike.dart';
 
 class BarraMedia extends StatelessWidget {
   @override
@@ -42,8 +43,10 @@ class BarraMedia extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Tooltip(
-                    message: 'I am a Tooltip',
-                    child: Icon(Icons.info, color: Colors.white)),
+                    message: """
+Serie de TV (2011). 24 episodios + 1 OVA. La historia transcurre en Akihabara y trata sobre un grupo de 
+amigos que ha convertido su horno de microondas en un dispositivo que puede enviar mensajes de texto al pasado.""",
+                    child: iconInfo()),
                 Textos1("Informacion", 11)
               ],
             )

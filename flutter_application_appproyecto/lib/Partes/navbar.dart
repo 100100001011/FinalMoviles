@@ -33,7 +33,7 @@ class _Navbar extends State {
               onTap: onTapped,
               currentIndex: indexP,
               unselectedItemColor: Colors.white,
-              selectedItemColor: Colors.purple,
+              selectedItemColor: Colors.red,
               //ICONOS
               items: [
                 BottomNavigationBarItem(
@@ -42,7 +42,7 @@ class _Navbar extends State {
                     ),
                     label: "Inicio"),
                 BottomNavigationBarItem(
-                    icon: Icon(Icons.play_circle_fill), label: "Proximamente")
+                    icon: Icon(Icons.play_circle_fill), label: "Estreno")
               ]),
         ));
   }
