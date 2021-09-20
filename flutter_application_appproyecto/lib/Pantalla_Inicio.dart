@@ -67,9 +67,9 @@ class _Home extends State<Home> {
         Lista(
             "Anime Isekai",
             "media/img/1C.jpg",
-            "media/video/FireForce.mp4",
+            "media/video/kobayashi.mp4",
             "media/img/2C.png",
-            "media/video/FireForce.mp4",
+            "media/video/konosuba.mp4",
             "media/img/3C.jpg",
             "media/video/rezero.mp4",
             "media/img/4C.jpg",
