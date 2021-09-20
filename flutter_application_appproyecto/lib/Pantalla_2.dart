@@ -61,25 +61,10 @@ class _Pantalla2 extends State<Pantalla2> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(5)),
-                          child: FlatButton.icon(
-                              onPressed: () {
-                                Navigator.pushReplacement(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) => VistaPlay(
-                                        direccion: "media/video/rick.mp4",
-                                      ),
-                                    ));
-                              },
-                              label: Text(
-                                'Play',
-                                style: TextStyle(color: Colors.black),
-                              ),
-                              icon: Icon(
-                                Icons.play_arrow,
-                                color: Colors.black,
-                                size: 30,
-                              ))),
+                          child: BotonPlay(
+                            nombre: "Play",
+                            ubicacion: "media/video/rick.mp4",
+                          )),
                     ),
                     Padding(
                       padding: EdgeInsets.all(8.0),
@@ -102,47 +87,38 @@ class _Pantalla2 extends State<Pantalla2> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          MaterialButton(
-                            onPressed: null,
-                            child: Column(
-                              children: [
-                                iconDown(),
-                                Padding(
-                                    padding: EdgeInsets.only(top: 8.0),
-                                    child: Text(
-                                      'Descargar',
-                                      style: TextStyle(color: Colors.white),
-                                    ))
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              iconDown(),
+                              Padding(
+                                  padding: EdgeInsets.only(top: 8.0),
+                                  child: Text(
+                                    'Descargar',
+                                    style: TextStyle(color: Colors.white),
+                                  ))
+                            ],
                           ),
-                          MaterialButton(
-                            onPressed: null,
-                            child: Column(
-                              children: [
-                                iconLike(),
-                                Padding(
-                                    padding: EdgeInsets.only(top: 8.0),
-                                    child: Text(
-                                      'Me Gusta',
-                                      style: TextStyle(color: Colors.white),
-                                    ))
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              iconLike(),
+                              Padding(
+                                  padding: EdgeInsets.only(top: 8.0),
+                                  child: Text(
+                                    'Me Gusta',
+                                    style: TextStyle(color: Colors.white),
+                                  ))
+                            ],
                           ),
-                          MaterialButton(
-                            onPressed: null,
-                            child: Column(
-                              children: [
-                                iconFavorite(),
-                                Padding(
-                                    padding: EdgeInsets.only(top: 8.0),
-                                    child: Text(
-                                      'Favoritos',
-                                      style: TextStyle(color: Colors.white),
-                                    ))
-                              ],
-                            ),
+                          Column(
+                            children: [
+                              iconFavorite(),
+                              Padding(
+                                  padding: EdgeInsets.only(top: 8.0),
+                                  child: Text(
+                                    'Favoritos',
+                                    style: TextStyle(color: Colors.white),
+                                  ))
+                            ],
                           )
                         ],
                       ),

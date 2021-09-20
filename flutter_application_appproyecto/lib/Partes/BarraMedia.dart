@@ -18,27 +18,8 @@ class BarraMedia extends StatelessWidget {
               children: [IconoCambiante(), Textos1("Agregar", 11)],
             ),
             //WIDGET BOTON
-            FlatButton.icon(
-              //FUNCION PARA LLAMAR AL VIDEO
-              onPressed: () {
-                //pushReplacement = PERMITE CERRAR LA PANTALLA
-                Navigator.pushReplacement(
-                    context,
-                    //PERMITE IR A OTRA VISTA
-                    MaterialPageRoute(
-                      builder: (context) => VistaPlay(
-                        direccion: "media/video/steing.mp4",
-                      ),
-                    ));
-              },
-              //PROPIEDADES DEL BOTON
-              color: Colors.white,
-              icon: Icon(
-                Icons.play_arrow,
-                color: Colors.black87,
-              ),
-              label: Text("Reproducir"),
-            ),
+            BotonPlay(
+                nombre: "Reproducir ", ubicacion: "media/video/steing.mp4"),
             Column(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_appproyecto/Pantalla_3.dart';
+import 'package:flutter_application_appproyecto/widgets/player.dart';
 
 //TEXTOS NEGRILLA
 Widget Textos1(String textos, double tama) {
@@ -30,8 +31,8 @@ Widget Gradiente1() {
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: <Color>[Colors.black54, Color(0x00000000)],
-              begin: Alignment(0.0, 0.5),
-              end: Alignment(0.0, 0.0))));
+              begin: Alignment(0.4, 0.0),
+              end: Alignment(0.0, 0.1))));
 }
 
 class Enlaces extends StatelessWidget {
@@ -59,5 +60,37 @@ class Enlaces extends StatelessWidget {
             )
           ]),
         ));
+  }
+}
+
+class BotonPlay extends StatelessWidget {
+  String nombre;
+  String ubicacion;
+  BotonPlay({required this.nombre, required this.ubicacion, Key? key})
+      : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return TextButton.icon(
+      //ICONO
+      icon: Icon(Icons.play_arrow),
+      //TEXTO
+      label: Text(nombre),
+      //ESTILO TEXTO
+      style: TextButton.styleFrom(
+        primary: Colors.black,
+        backgroundColor: Colors.white,
+      ),
+      onPressed: () {
+        //pushReplacement = PERMITE CERRAR LA PANTALLA
+        Navigator.pushReplacement(
+            context,
+            //PERMITE IR A OTRA VISTA
+            MaterialPageRoute(
+              builder: (context) => VistaPlay(
+                direccion: ubicacion,
+              ),
+            ));
+      },
+    );
   }
 }

@@ -1,10 +1,8 @@
-/// Flutter code sample for TextButton
-
-// This sample shows how to render a disabled TextButton, an enabled TextButton
-// and lastly a TextButton with gradient background.
-
 import 'package:flutter/material.dart';
-import 'package:flutter_application_appproyecto/Pantalla_3.dart';
+import 'package:flutter_application_appproyecto/widgets/Widgets.dart';
+import 'package:flutter_application_appproyecto/widgets/player.dart';
+import 'package:flutter_application_appproyecto/widgets/IconosCambiantes.dart';
+import 'package:flutter_application_appproyecto/widgets/iconsLike.dart';
 
 void main() => runApp(const MyApp());
 
@@ -30,18 +28,49 @@ class MyApp extends StatelessWidget {
 class MyStatelessWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return TextButton.icon(
-      icon: Icon(Icons.save),
-      label: Text("SAVE"),
-      style: TextButton.styleFrom(
-        primary: Colors.white,
-        backgroundColor: Colors.green,
-      ),
-      onPressed: () {
-        //pushReplacement = PERMITE CERRAR LA PANTALLA
-        Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => Prueba3()));
-      },
+    return Column(
+      children: [
+        TextButton.icon(
+          icon: Icon(Icons.play_arrow),
+          label: Text("Reproducir"),
+          style: TextButton.styleFrom(
+            primary: Colors.white,
+            backgroundColor: Colors.grey,
+          ),
+          onPressed: () {
+            //pushReplacement = PERMITE CERRAR LA PANTALLA
+            Navigator.pushReplacement(
+                context,
+                //PERMITE IR A OTRA VISTA
+                MaterialPageRoute(
+                  builder: (context) => VistaPlay(
+                    direccion: "media/video/steing.mp4",
+                  ),
+                ));
+          },
+        ),
+        FlatButton.icon(
+          //FUNCION PARA LLAMAR AL VIDEO
+          onPressed: () {
+            //pushReplacement = PERMITE CERRAR LA PANTALLA
+            Navigator.pushReplacement(
+                context,
+                //PERMITE IR A OTRA VISTA
+                MaterialPageRoute(
+                  builder: (context) => VistaPlay(
+                    direccion: "media/video/steing.mp4",
+                  ),
+                ));
+          },
+          //PROPIEDADES DEL BOTON
+          color: Colors.white,
+          icon: Icon(
+            Icons.play_arrow,
+            color: Colors.black87,
+          ),
+          label: Text("Reproducir"),
+        ),
+      ],
     );
   }
 }
