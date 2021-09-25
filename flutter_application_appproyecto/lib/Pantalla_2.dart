@@ -13,11 +13,11 @@ class _Pantalla2 extends State<Pantalla2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //
+        //PONER EL COLOR DE FONDO
         backgroundColor: Colors.black,
+        //PARA MANTENER LA BARRA SUPERIOR INMOVIL
         body: CustomScrollView(
           slivers: [
-            //
             SliverAppBar(
               expandedHeight: 500.0,
               flexibleSpace: FlexibleSpaceBar(
@@ -26,6 +26,7 @@ class _Pantalla2 extends State<Pantalla2> {
                   children: [
                     Padding(
                       padding: EdgeInsets.only(),
+                      //WIDGET PARA ANIADIR ESPACIOS ENTRE WIDGET
                       child: SizedBox(
                         height: 250.00,
                         width: 150.00,
@@ -70,6 +71,7 @@ class _Pantalla2 extends State<Pantalla2> {
                       padding: EdgeInsets.all(8.0),
                       child: Container(
                           height: 50.00,
+                          //WIDGET PERSONALIZADO
                           child: Textos1(
                               "Después de una serie de episodios algo decepcionantes, el final de la quinta temporada de 'Rick y Morty' realmente hizo que las cosas remontaran,",
                               13)),
@@ -89,6 +91,7 @@ class _Pantalla2 extends State<Pantalla2> {
                         children: [
                           Column(
                             children: [
+                              //WIDGET PERSONALIZADO-ICONOSCAMBIANTES
                               iconDown(),
                               Padding(
                                   padding: EdgeInsets.only(top: 8.0),
@@ -100,6 +103,7 @@ class _Pantalla2 extends State<Pantalla2> {
                           ),
                           Column(
                             children: [
+                              ////WIDGET PERSONALIZADO-ICONOS
                               iconLike(),
                               Padding(
                                   padding: EdgeInsets.only(top: 8.0),

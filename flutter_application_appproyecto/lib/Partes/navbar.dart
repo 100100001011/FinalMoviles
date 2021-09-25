@@ -11,8 +11,9 @@ class Navbar extends StatefulWidget {
 
 class _Navbar extends State {
   int indexP = 0;
-  //ARRAY DE WIDGET
+  //ARRAY DE WIDGET DE LAS PANTALLAS
   final List<Widget> vistasPantalla = [Home(), Pantalla2()];
+  //METODO AL MOMENTO DE TAP
   void onTapped(int index) {
     setState(() {
       indexP = index;

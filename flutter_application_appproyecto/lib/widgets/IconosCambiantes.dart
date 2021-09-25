@@ -25,7 +25,7 @@ class _IconoCambianteState extends State<IconoCambiante>
           ..addListener(() {
             setState(() {});
           });
-
+    //VARIABLE PARA LA ANIMACION DE ROTAR
     var curva = CurvedAnimation(
       parent: controladorAnimacion,
       curve: Interval(0.0, 1.0, curve: Curves.easeOut),

@@ -9,15 +9,14 @@ class Home extends StatefulWidget {
   State<Home> createState() => _Home();
 }
 
-/// This is the private State class that goes with MyStatefulWidget.
 class _Home extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //
+        //PERMITE HACER SCROLL A LA PANTALLA
         body: CustomScrollView(
       slivers: [
-        //
+        //PARA MANTENER LA BARRA SUPERIOR INMOVIL
         SliverAppBar(
           title: BarraSuperior(),
           pinned: true,
@@ -27,15 +26,20 @@ class _Home extends State<Home> {
           expandedHeight: 500.0,
           flexibleSpace: FlexibleSpaceBar(
             background: Stack(
+              //QUE SE AJUSTE TODA LA PANTALLA
               fit: StackFit.expand,
               children: [
+                //WIGDET PERSONALIZADO
                 ImagenFondo("media/img/Fondo.jpg"),
+                //WIGDET PERSONALIZADO
                 Gradiente1(),
+                //WIGDET PERSONALIZADO
                 BarraMedia()
               ],
             ),
           ),
         ),
+        //WIGDET PERSONALIZADO - CARRUSEL
         ListaProgreso(
             "Continua Viendo",
             "media/img/1.jpg",
@@ -44,6 +48,7 @@ class _Home extends State<Home> {
             "media/video/evangelion.mp4",
             "media/img/3.jpg",
             "media/video/kimetsu.mp4"),
+        //WIGDET PERSONALIZADO - CARRUSEL
         Lista(
             "Anime Kohai",
             "media/img/1A.jpg",
@@ -54,6 +59,7 @@ class _Home extends State<Home> {
             "media/video/bleach.mp4",
             "media/img/4A.jpg",
             "media/video/samuraix.mp4"),
+        //WIGDET PERSONALIZADO - CARRUSEL
         Lista(
             "Anime Shonen",
             "media/img/1B.jpg",
@@ -64,6 +70,7 @@ class _Home extends State<Home> {
             "media/video/fireforce.mp4",
             "media/img/4B.jpg",
             "media/video/beastars.mp4"),
+        //WIGDET PERSONALIZADO - CARRUSEL
         Lista(
             "Anime Isekai",
             "media/img/1C.jpg",

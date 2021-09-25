@@ -121,6 +121,8 @@ class Card2 extends StatelessWidget {
                           offset: Offset(0.0, 7.0))
                     ]),
               ),
+              //####################################################
+              //BARRA DE PROGRESO Y BOTON
               //LinearProgressIndicator = LISTA DE PROGRESO
               LinearProgressIndicator(
                 value: 10,
