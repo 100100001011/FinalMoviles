@@ -64,8 +64,9 @@ Widget Carrusel(String dire1, String video1, String dire2, String video2,
 
 Widget Lista(String titulo, String dire1, String video1, String dire2,
     String video2, String dire3, String video3, String dire4, String video4) {
-  //SliverList = SCROLL HORIZONTAL
+  //SliverList = NOS PERMITE HACER SCROLL CON FECTO Y HACER LISTAS INFINITAS
   return SliverList(
+    //COMO SE CONSTRUYE SUS HIJOS
     delegate: SliverChildBuilderDelegate((BuildContext context, index) {
       return Container(
         color: Colors.black,
@@ -76,6 +77,7 @@ Widget Lista(String titulo, String dire1, String video1, String dire2,
           ],
         ),
       );
+      //CONTROLADOR DEL NUMERO DE LISTAS
     }, childCount: 1),
   );
 }

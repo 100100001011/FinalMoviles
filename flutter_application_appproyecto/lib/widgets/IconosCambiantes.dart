@@ -55,6 +55,7 @@ class _IconoCambianteState extends State<IconoCambiante>
     });
   }
 
+  //GESTOR DE ANIMACION PARA EL CAMBIO DE ICONO
   @override
   Widget build(BuildContext context) {
     return GestureDetector(

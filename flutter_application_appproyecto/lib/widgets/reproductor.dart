@@ -17,6 +17,7 @@ class _ReproductorMediaState extends State<ReproductorMedia> {
   //VARIABLE TIPO ChewieController PARA LOS CONTROLES
   late ChewieController controles;
   @override
+  //METODO ANTES QUE INICIE EL ESTADO
   void initState() {
     //PROPIEDADES DEL REPRODUCTOR
     controles = ChewieController(

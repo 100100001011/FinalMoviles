@@ -14,16 +14,19 @@ class _Home extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
         //PERMITE HACER SCROLL A LA PANTALLA
+        //Y SE MANEJA CON SLIVER PARA EFETOS DE DESPLAZAMIENTE
         body: CustomScrollView(
       slivers: [
-        //PARA MANTENER LA BARRA SUPERIOR INMOVIL
+        //APPBAR PARA MANTENER LA BARRA SUPERIOR INMOVIL
         SliverAppBar(
+          //PROPIEDADES
           title: BarraSuperior(),
           pinned: true,
           //snap: false,
-          floating: false,
+          //floating: false,
           //TAMANIO
           expandedHeight: 500.0,
+          //PERMITE EXPANDIR EL AREA
           flexibleSpace: FlexibleSpaceBar(
             background: Stack(
               //QUE SE AJUSTE TODA LA PANTALLA

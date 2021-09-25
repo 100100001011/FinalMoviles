@@ -84,7 +84,7 @@ class BotonPlay extends StatelessWidget {
         //pushReplacement = PERMITE CERRAR LA PANTALLA
         Navigator.pushReplacement(
             context,
-            //PERMITE IR A OTRA VISTA
+            //PERMITE IR A OTRA VISTA-ARCHIVO PLAYER
             MaterialPageRoute(
               builder: (context) => VistaPlay(
                 direccion: ubicacion,

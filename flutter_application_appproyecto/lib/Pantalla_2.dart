@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'widgets/Widgets.dart';
-import 'widgets/player.dart';
 import 'widgets/iconsLike.dart';
 
 class Pantalla2 extends StatefulWidget {
@@ -20,6 +19,7 @@ class _Pantalla2 extends State<Pantalla2> {
           slivers: [
             SliverAppBar(
               expandedHeight: 500.0,
+              //
               flexibleSpace: FlexibleSpaceBar(
                   background: Container(
                 child: Column(
@@ -62,6 +62,7 @@ class _Pantalla2 extends State<Pantalla2> {
                           decoration: BoxDecoration(
                               color: Colors.white,
                               borderRadius: BorderRadius.circular(5)),
+                          //WIDGET PERSONAILZADO
                           child: BotonPlay(
                             nombre: "Play",
                             ubicacion: "media/video/rick.mp4",
