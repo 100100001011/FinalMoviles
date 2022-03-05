@@ -11,9 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'ANIME',
-        theme: ThemeData(
-          primaryColor: Colors.red
-        ),
+        theme: ThemeData(primaryColor: Colors.red),
         home: Navbar());
   }
 }
