@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_appproyecto/UI/Screen/Login.dart';
 import 'UI/Widgets/navbar.dart';
 
 void main() {
@@ -12,6 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'ANIME',
         theme: ThemeData(primaryColor: Colors.red),
-        home: Navbar());
+        home: Login());
   }
 }

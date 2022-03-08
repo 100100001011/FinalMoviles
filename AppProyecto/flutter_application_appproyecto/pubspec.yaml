@@ -58,6 +58,7 @@ flutter_native_splash:
 # The following section is specific to Flutter.
 flutter:
   assets:
+    - media/img/fondoL.jpg
     - media/img/logo2.png
     - media/img/Fondo.jpg
     - media/img/Fondo2.jpg
