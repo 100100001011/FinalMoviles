@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_appproyecto/UI/Widgets/Widgets.dart';
-import 'package:flutter_application_appproyecto/UI/Widgets/player.dart';
 import 'package:flutter_application_appproyecto/UI/Widgets/IconosCambiantes.dart';
 import 'package:flutter_application_appproyecto/UI/Widgets/iconsLike.dart';
 
